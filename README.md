@@ -3,9 +3,10 @@ Download and processing Precipitation Features data
 
 Data
 ----
-The precipitation features levels are open to public from http server at:  
+The precipitation features (PF) levels are open to public http server from the Precipitation Measuring Mission (PMM) for the Texas A&M University CORPUS CRISTI:  
 
-[precipitation features](http://atmos.tamucc.edu/trmm/data/)
+[PMM](http://atmos.tamucc.edu/trmm/)
+[PF](http://atmos.tamucc.edu/trmm/data/)
 
 -------------------------------------
 Maximum height with 40 dBZ echo (km)
