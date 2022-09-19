@@ -1,0 +1,18 @@
+{
+    "mapping":"../../mapping/",
+
+    "dir_TRMM":"/mnt/Data/Data/PF/TRMM/rpf/",
+    "dir_TRMM_SA":"/mnt/Data/Data/PF/TRMM/rpf_SA/",
+
+    "dir_GPM":"/mnt/Data/Data/PF/GPM/rgpf/",
+    "dir_GPM_SA":"/mnt/Data/Data/PF/GPM/rgpf_SA/",
+
+    "dir_IMERG":"/mnt/Data/Data/IMERG/season/summer/",
+
+    "csv_TRMM":"/mnt/Data/Data/PF/TRMM/rpf_SA/",
+    "csv_GPM":"/mnt/Data/Data/PF/GPM/rgpf_SA/"
+
+
+
+
+}
