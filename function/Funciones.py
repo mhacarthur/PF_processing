@@ -44,27 +44,35 @@ def download_file(url_file,file_out):
             handle.write(data)
     # print("Done!")
 
-def dbz2mm(serie_in):
+def dbz2mm(dbz_input, a=200.0, b=1.6):#ref wradlib, ref: machado a=174.8, b=1.56
+    '''
+    La refectividad (Z) y la taza de precipitacion (R), se encuentran relacionadas por la ecuacion:
+    Z = a * R**b --> R = (Z/a)**(1/b)
+    Primero se debe convertir de dBz (decibil de reflectividad de factor Z) a Z (factor de reflectividad), usando
+    Z = 10**(dbz/10)
+    '''
     # convert dbz to mm with marshall-palmer relation
-    # R = (10**(Z/10)/200)**0.625
-    # Z = 10*np.log10(R**0.625*200)
-    lvl = len(serie_in)
-    serie_out = np.zeros(lvl)
+    # dbz to Z: Z = 10**(dbz/10)
+    # Z to R  : Z = a * R**b --> R = (Z/a)**(1/b)
+    lvl = len(dbz_input)
+    R = np.zeros(lvl)
     for n in range(lvl):
-        if serie_in[n] == 0:
-            serie_out[n] = 0
+        if dbz_input[n] == 0:
+            R[n] = 0
         else:
-            # serie_out[n] = ((10**(serie_in[n]/10))/200)**0.625
-            serie_out[n] = 10**(serie_in[n]/10)
-    return serie_out
+            Z = 10 ** (dbz_input / 10)
+            R[n] = (Z[n] / a) ** (1 / b)
+    return R
 
-def mm2dbz(serie_in):
-    lvl = len(serie_in)
+def mm2dbz(R_input, a=200.0, b=1.6):
+    lvl = len(R_input)
     serie_out = np.zeros(lvl)
     for n in range(lvl):
-        if serie_in[n] == 0:
+        if R_input[n] == 0:
             serie_out[n] = 0
         else:
-            # serie_out[n] = 10*np.log10((serie_in[n]*200)**0.625)
-            serie_out[n] = 10*np.log10(serie_in[n])
+            Z = a * R_input[n]**b
+            serie_out[n] = 10*np.log10(Z)
+
+            # serie_out[n] = (b*np.log10(R_input[n]*a))
     return serie_out
