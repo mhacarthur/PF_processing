@@ -1,5 +1,5 @@
 {
-    "mapping":"../../mapping/",
+    "dir_comm":"../../mapping/comm/",
 
     "dir_TRMM":"/mnt/Data/Data/PF/TRMM/rpf/",
     "dir_TRMM_SA":"/mnt/Data/Data/PF/TRMM/rpf_SA/",
@@ -15,7 +15,5 @@
     "dir_images":"../../images/",
 
     "csv_TRMM":"/mnt/Data/Data/PF/TRMM/rpf_SA/",
-    "csv_GPM":"/mnt/Data/Data/PF/GPM/rgpf_SA/",
-
-    "dir_communities":"'/mnt/Data/Github/Complex-Network-AS/mapping/communities/'"
+    "csv_GPM":"/mnt/Data/Data/PF/GPM/rgpf_SA/"
 }
