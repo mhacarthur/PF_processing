@@ -15,5 +15,7 @@
     "dir_images":"../../images/",
 
     "csv_TRMM":"/mnt/Data/Data/PF/TRMM/rpf_SA/",
-    "csv_GPM":"/mnt/Data/Data/PF/GPM/rgpf_SA/"
+    "csv_GPM":"/mnt/Data/Data/PF/GPM/rgpf_SA/",
+
+    "json_CN": "../../../Complex-Network-AS/json/"
 }
