@@ -9,7 +9,7 @@
 
     "dir_IMERG":"/mnt/Data/Data/IMERG/season/summer/",
 
-    "dir_ENSEMBLE":"/mnt/Data/Data/PF/ENSEMBLE/ENSEMBLE_SA/",
+    "dir_ENSEMBLE":"/mnt/Data/Data/PF/ENSEMBLE/",
     "dir_ENSEMBLE_list":"/mnt/Data/Data/PF/ENSEMBLE/list/",
 
     "dir_images":"../../images/",
