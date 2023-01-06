@@ -1,5 +1,6 @@
 {
-    "dir_comm":"../../mapping/comm/",
+    "mapping_comm":"../../mapping/comm/",
+    "mapping_political":"../../mapping/political/",
 
     "dir_TRMM":"/mnt/Data/Data/PF/TRMM/rpf/",
     "dir_TRMM_SA":"/mnt/Data/Data/PF/TRMM/rpf_SA/",
